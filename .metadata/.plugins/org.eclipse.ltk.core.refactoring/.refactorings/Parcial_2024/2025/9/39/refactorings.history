@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Parcial_2024/src/main/java/Servlet/Ej1.java&apos; to &apos;CalcularCalcularNota.java&apos;" description="Rename resource &apos;Ej1.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/Servlet/Ej1.java" name="CalcularCalcularNota.java" stamp="1758669436664" updateReferences="true"/>
+</session>

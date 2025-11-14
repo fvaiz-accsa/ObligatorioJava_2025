@@ -1,0 +1,7 @@
+INDEX VERSION 1.134
+C:\Users\Nico\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\669882275.index
+\Practico2_Ej4\src\main\java
+C:\Users\Nico\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2689293536.index
+\Practico2_Ej5\src\main\java
+C:\Users\Nico\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2161713323.index
+\Practico2_Ej2\src\main\java

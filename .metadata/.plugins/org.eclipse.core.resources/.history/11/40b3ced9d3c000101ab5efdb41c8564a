@@ -1,0 +1,5 @@
+package monedajpa.ejbs;
+
+public interface EJBMonedaLocal {
+
+}
