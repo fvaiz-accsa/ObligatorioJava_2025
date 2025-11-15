@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+      
+		
+<h:head>
+    <title>Editar Moneda</title>
+    <h:outputStylesheet library="css" name="styles.css" />
+</h:head>
+
+<h:body>
+
+    <h1>Editar Moneda</h1>
+
+    <h:form>
+
+        <fieldset style="width: 350px; padding: 10px;">
+            <legend style="font-weight:bold;">Modificar datos</legend>
+
+            <!-- Campo: Nombre -->
+            <div style="margin-bottom: 10px;">
+                <h:outputLabel value="Nombre:" for="nombre" />
+                <br />
+                <h:inputText id="nombre" 
+                             value="#{monedaBean.monedaSeleccionada.nombre}"
+                             style="width: 100%;" />
+            </div>
+
+            <!-- Campo: Año -->
+            <div style="margin-bottom: 10px;">
+                <h:outputLabel value="Año:" for="anio" />
+                <br />
+                <h:inputText id="anio" 
+                             value="#{monedaBean.monedaSeleccionada.anio}"
+                             style="width: 100%;" />
+            </div>
+
+            <!-- Botones -->
+            <div style="margin-top: 15px;">
+                <h:commandButton value="Guardar Cambios"
+                                 action="#{monedaBean.guardarEdicion}" />
+
+                <h:commandButton value="Cancelar"
+                                 action="index.xhtml"
+                                 style="margin-left: 10px;" />
+            </div>
+
+        </fieldset>
+
+    </h:form>
+
+</h:body>
+
+</html>

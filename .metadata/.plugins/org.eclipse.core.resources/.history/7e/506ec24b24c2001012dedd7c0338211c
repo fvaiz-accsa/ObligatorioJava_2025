@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+      
+
+<h:head>
+    <title>Numismáticos</title>
+    <h:outputStylesheet library="css" name="styles.css" />
+</h:head>
+
+<h:body>
+	<div class="container">
+	    <h1>Numismáticos</h1>
+	
+	    <h:form>
+	
+	        <fieldset style="width: 420px; padding: 10px;">
+	            <legend style="font-weight: bold;">Lista de Monedas Registradas</legend>
+	
+	            <!-- TABLA -->
+	            <h:dataTable 
+	                    value="#{monedaBean.lista}" 
+	                    var="m"
+	                    border="1"
+	                    style="width:100%; text-align:center; border-collapse:collapse;">
+	
+	                <!-- Nombre -->
+	                <h:column>
+	                    <f:facet name="header">Nombre</f:facet>
+	                    #{m.nombre}
+	                </h:column>
+	
+	                <!-- Año -->
+	                <h:column>
+	                    <f:facet name="header">Año</f:facet>
+	                    #{m.anio}
+	                </h:column>
+	
+	                <!-- Editar (solo si hay monedas) -->
+	                <h:column>
+	                    <f:facet name="header">Editar</f:facet>
+	                    <h:commandLink 
+	                        value="Editar" 
+	                        action="editarMoneda.xhtml">
+	                        <f:setPropertyActionListener 
+	                            target="#{monedaBean.monedaSeleccionada}" 
+	                            value="#{m}" />
+	                    </h:commandLink>
+	                </h:column>
+	
+	            </h:dataTable>
+	
+	            <!-- MENSAJE SI NO HAY MONEDAS -->
+	            <h:panelGroup rendered="#{empty monedaBean.lista}">
+	                <p style="font-style: italic; color: gray; margin-top: 10px;">
+	                    No hay monedas registradas.
+	                </p>
+	            </h:panelGroup>
+	
+	            <!-- BOTÓN AGREGAR SIEMPRE VISIBLE -->
+	            <div style="margin-top: 15px;">
+	                <h:commandButton 
+	                        value="Agregar" 
+	                        action="ingresarMoneda.xhtml" />
+	            </div>
+	
+	        </fieldset>
+	
+	    </h:form>
+	</div>
+	
+</h:body>
+
+</html>
+

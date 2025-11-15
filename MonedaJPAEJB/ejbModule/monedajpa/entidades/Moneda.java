@@ -43,10 +43,10 @@ public class Moneda {
 	public void setAnio(int anio) {
 		this.anio = anio;
 	}
-	public String getValorNominal() {
+	public double getValorNominal() {
 		return valorNominal;
 	}
-	public void setValorNominal(String valorNominal) {
+	public void setValorNominal(double valorNominal) {
 		this.valorNominal = valorNominal;
 	}
 	public double getPrecioCompra() {
@@ -63,7 +63,7 @@ public class Moneda {
 	}
 
 	//Constructor
-	public Moneda(int id, Date fechaRegistro, String pais, int anio, String valorNominal, double precioCompra, double valorMercado) {
+	public Moneda(int id, Date fechaRegistro, String pais, int anio, double valorNominal, double precioCompra, double valorMercado) {
 		this.id = id;
 		this.fechaRegistro = fechaRegistro;
 		this.pais = pais;
@@ -74,7 +74,7 @@ public class Moneda {
 	}
 	
 	//Constructor sin ID
-	public Moneda(Date fechaRegistro, String pais, int anio, String valorNominal, double precioCompra, double valorMercado) {
+	public Moneda(Date fechaRegistro, String pais, int anio, double valorNominal, double precioCompra, double valorMercado) {
 		this.fechaRegistro = fechaRegistro;
 		this.pais = pais;
 		this.anio = anio;

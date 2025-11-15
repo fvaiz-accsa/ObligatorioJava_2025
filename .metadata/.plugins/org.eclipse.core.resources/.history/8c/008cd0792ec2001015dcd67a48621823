@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:h="http://java.sun.com/jsf/html"
+xmlns:f="http://java.sun.com/jsf/core">
+
+
+	<h:head>
+		<title>Numismáticos</title>
+		<h:outputStylesheet library="css" name="styles.css" />
+	</h:head>
+	
+	
+	<h:body>
+		<div class="container large">
+			<h1 class="main-title">Numismáticos</h1>
+			
+			<h:form>
+				<fieldset class="form-card large-fieldset">
+
+				    <div class="form-title">
+				        <h2 class="title-large">Lista de Monedas Registradas</h2>
+				    </div>
+
+					<h:dataTable value="#{monedaBean.lista}" var="m" styleClass="big-table">
+						<h:column>
+							<f:facet name="header"><span class="header-text">Nombre</span></f:facet>
+							<span class="row-text">#{m.nombre}</span>
+						</h:column>
+						
+						<h:column>
+							<f:facet name="header"><span class="header-text">Año</span></f:facet>
+							<span class="row-text">#{m.anio}</span>
+						</h:column>
+						
+						
+						<h:column>
+							<f:facet name="header"><span class="header-text">Editar</span></f:facet>
+							<h:commandLink value="Editar" action="editarMoneda.xhtml" styleClass="edit-link">
+							<f:setPropertyActionListener target="#{monedaBean.monedaSeleccionada}" value="#{m}" />
+							</h:commandLink>
+						</h:column>
+					</h:dataTable>
+					
+					
+					<h:panelGroup rendered="#{empty monedaBean.lista}">
+						<p class="no-data-text">No hay monedas registradas.</p>
+					</h:panelGroup>
+						
+						
+					<div class="button-group">
+						<h:commandButton value="Agregar" action="ingresarMoneda.xhtml" styleClass="btn-primary big-btn" />
+					</div>
+				
+				
+				</fieldset>
+			</h:form>
+		</div>
+		
+	</h:body>
+</html>

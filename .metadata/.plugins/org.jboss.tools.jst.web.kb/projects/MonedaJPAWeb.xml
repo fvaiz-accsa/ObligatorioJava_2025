@@ -185,9 +185,54 @@
  </paths>
  <validation>
   <core validator-id="jboss.cdi.core"/>
-  <el/>
+  <el>
+   <linked-el length="35" name="%0" offset="786" path="%1"/>
+   <linked-el length="33" name="%2" offset="990" path="%1"/>
+   <linked-el length="22" name="%3" offset="675" path="%4"/>
+   <linked-el length="27" name="%3" offset="1476" path="%4"/>
+   <linked-el length="9" name="%5" offset="1032" path="%4"/>
+   <linked-el length="22" name="%6" offset="675" path="%4"/>
+   <linked-el length="27" name="%6" offset="1476" path="%4"/>
+   <linked-el length="40" name="%6" offset="991" path="%7"/>
+   <linked-el length="35" name="%6" offset="1317" path="%4"/>
+   <linked-el length="35" name="%6" offset="786" path="%1"/>
+   <linked-el length="29" name="%6" offset="1155" path="%1"/>
+   <linked-el length="42" name="%6" offset="774" path="%7"/>
+   <linked-el length="31" name="%6" offset="1174" path="%7"/>
+   <linked-el length="33" name="%6" offset="990" path="%1"/>
+   <linked-el length="29" name="%8" offset="1155" path="%1"/>
+   <linked-el length="31" name="%9" offset="1174" path="%7"/>
+   <linked-el length="11" name="%10" offset="859" path="%4"/>
+   <linked-el length="35" name="%11" offset="786" path="%1"/>
+   <linked-el length="33" name="%11" offset="990" path="%1"/>
+   <linked-el length="9" name="%12" offset="1032" path="%4"/>
+   <linked-el length="11" name="%12" offset="859" path="%4"/>
+   <linked-el length="7" name="%12" offset="1358" path="%4"/>
+   <linked-el length="40" name="%13" offset="991" path="%7"/>
+   <linked-el length="35" name="%13" offset="1317" path="%4"/>
+   <linked-el length="42" name="%13" offset="774" path="%7"/>
+   <linked-el length="40" name="%14" offset="991" path="%7"/>
+   <linked-el length="42" name="%15" offset="774" path="%7"/>
+  </el>
  </validation>
- <aliases/>
+ <aliases>
+  <alias path="monedaBean.nuevaMoneda.nombre" value="%0"/>
+  <alias path="monedaBean.nuevaMoneda.anio" value="%2"/>
+  <alias path="monedaBean.lista" value="%3"/>
+  <alias path="m.anio" value="%5"/>
+  <alias path="monedaBean" value="%6"/>
+  <alias path="monedaBean.guardarNueva" value="%8"/>
+  <alias path="monedaBean.guardarEdicion" value="%9"/>
+  <alias path="m.nombre" value="%10"/>
+  <alias path="monedaBean.nuevaMoneda" value="%11"/>
+  <alias path="/MonedaJPAWeb/src/main/webapp/index.xhtml" value="%4"/>
+  <alias path="m" value="%12"/>
+  <alias path="/MonedaJPAWeb/src/main/webapp/editarMoneda.xhtml" value="%7"/>
+  <alias path="/MonedaJPAWeb/src/main/webapp/ingresarMoneda.xhtml" value="%1"/>
+  <alias path="monedaBean.monedaSeleccionada" value="%13"/>
+  <alias path="monedaBean.monedaSeleccionada.anio" value="%14"/>
+  <alias path="monedaBean.monedaSeleccionada.nombre" value="%15"/>
+ </aliases>
  <includes/>
  <uris/>
 </kb-project>

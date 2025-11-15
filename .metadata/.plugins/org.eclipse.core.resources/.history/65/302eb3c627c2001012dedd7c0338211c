@@ -1,0 +1,105 @@
+/* ====== CONTENEDOR PRINCIPAL ====== */
+.main-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* ====== FORMULARIOS ====== */
+.form-card {
+    width: 70%;
+    max-width: 900px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.form-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #333333;
+}
+
+/* ====== GRUPOS DE CAMPOS ====== */
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+    color: #444444;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+}
+
+/* ====== BOTONES ====== */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* ➜ Separamos bien los botones */
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 14px 28px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Guardar / Aceptar */
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Cancelar */
+.btn-secondary {
+    background-color: #d9534f; /* ➜ Rojo suave estilo Bootstrap */
+    color: white;
+}
+
+/* Hover */
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* ====== TABLAS ====== */
+.table-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.big-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.big-table th,
+.big-table td {
+    padding: 15px;
+    border: 1px solid #cccccc;
+    text-align: center;
+}
+
+.big-table th {
+    background-color: #f0f0f0;
+    font-size: 20px;
+}
